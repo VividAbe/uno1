@@ -11,7 +11,7 @@ export class GameService {
   }
 
   getGame() {
-    return this.firestore.collection('game').doc('joshGame').snapshotChanges().subscribe(res => {
+    return this.firestore.collection('game').doc('AbeGame').snapshotChanges().subscribe(res => {
       console.log('GameService.getGame', res.payload.data());
     });
   }
